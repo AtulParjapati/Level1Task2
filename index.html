@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JioMusic - Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#0a0014;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:rgba(20,0,40,0.7);
+      backdrop-filter:blur(15px);
+      z-index:1000;
+    }
+
+    header h1{
+      font-size:30px;
+      font-weight:700;
+      color:#ff007a;
+    }
+
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ff007a;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+      background:linear-gradient(130deg,#240046,#5a189a,#9d4edd);
+    }
+
+    .hero-text h2{
+      font-size:60px;
+      font-weight:700;
+      max-width:600px;
+      line-height:1.2;
+    }
+
+    .hero-text p{
+      margin-top:20px;
+      font-size:20px;
+      color:#eee;
+      max-width:450px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 40px;
+      background:#ff007a;
+      color:#fff;
+      font-weight:700;
+      border-radius:40px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#d60067;
+    }
+
+    .features{
+      padding:100px 8%;
+      background:#12001f;
+      text-align:center;
+    }
+
+    .features h2{
+      font-size:42px;
+      margin-bottom:40px;
+      color:#ff007a;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:35px;
+    }
+
+    .card{
+      background:#1b002e;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 0 20px rgba(255,0,122,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(255,0,122,0.4);
+    }
+
+    .playlist-section{
+      padding:100px 8%;
+      background:#0d0018;
+      text-align:center;
+    }
+
+    .playlist-section h2{
+      font-size:40px;
+      margin-bottom:25px;
+      color:#9d4edd;
+    }
+
+    .playlist-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:40px;
+      padding-top:30px;
+    }
+
+    .playlist{
+      background:#150024;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 0 15px rgba(157,78,221,0.3);
+      transition:0.3s;
+    }
+
+    .playlist:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 25px rgba(157,78,221,0.5);
+    }
+
+    .playlist h3{
+      margin-bottom:10px;
+      color:#ffb3ff;
+      font-size:20px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#0a0014;
+      color:#777;
+      margin-top:40px;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>JioMusic</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#playlist">Playlists</a>
+    <a href="#premium">Premium</a>
+    <a href="#download">Download</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h2>Experience Music Like Never Before</h2>
+    <p>Feel the beats, explore millions of songs, discover new artists, and create your own world of music on JioMusic.</p>
+    <a href="#features" class="btn">Explore Now</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2>Why Choose JioMusic?</h2>
+  <div class="feature-grid">
+    <div class="card"><h3>HD Sound</h3><p>Enjoy ultra-clear audio with immersive sound.</p></div>
+    <div class="card"><h3>Trending Charts</h3><p>Explore India’s top trending tracks updated daily.</p></div>
+    <div class="card"><h3>Smart Recommendations</h3><p>Discover music that suits your mood and taste.</p></div>
+    <div class="card"><h3>Unlimited Downloads</h3><p>Save tracks offline and listen anywhere.</p></div>
+  </div>
+</section>
+
+<section class="playlist-section" id="playlist">
+  <h2>Top Playlists</h2>
+  <div class="playlist-grid">
+    <div class="playlist"><h3>Bollywood Hits</h3><p>Your favorite Bollywood tracks.</p></div>
+    <div class="playlist"><h3>Lo-Fi Beats</h3><p>Relaxing beats for study & chill.</p></div>
+    <div class="playlist"><h3>Punjabi Vibes</h3><p>High-energy Punjabi hits.</p></div>
+    <div class="playlist"><h3>Romantic Mix</h3><p>Melodic songs for special moments.</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2025 JioMusic Landing Page — Created for practice.
+</footer>
+
+</body>
+</html>
